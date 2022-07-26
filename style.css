@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between
+}
+
+#profile1 h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: monospace;
+    font-weight: 10;
+}
+
+#profile2 h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 10;
+    line-height: 35px;
+    margin-right: 2em;
+}
+
+#profile1 #prof-img{
+ height:90vh ;
+ width: 70vh;
+}
+
+#profile1 #shop-img{
+    /* height:90vh ; */
+    width: 25vh;
+    margin-bottom: 1.5em;
+   }
+
+#profile1{
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+#profile2{
+    width: 70vh;
+    padding: 2em;
+    margin-top: .1em;
+    margin-right: 6em;
+}
+
+label{
+    display: block;
+    margin: .5em;
+}
+
+input{
+    padding: .6em;
+    border-radius: .3em;
+    border: 1px solid;
+    opacity: .7;
+    background-color: azure;
+    width: 90%;
+    margin-bottom: 1em;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile2 #box{
+    position: relative;
+}
+
+#togglePassword,#tg1,#tg2{
+    position: absolute;
+    top: 2.4em;
+    /* margin-right: 100px; */
+    left: 0;
+    font-size: 15px;
+    margin-left: 17.6em;
+    opacity: 0.5;
+}
+
+
+#togglePassword:hover,#tg1:hover,#tg2:hover{
+   cursor: pointer;
+}
+
+#profile2 button{
+    display: block;
+    width: 40%;
+    padding: .5em;
+    border-radius: .3em;
+    margin-left: 7em;
+    margin-bottom: .5em;
+    border: 1px solid;
+}
+
+#profile2 #btn2{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+
+#profile2 button:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #container{
+        display: block;
+    }
+
+    #profile1 #prof-img, #profile1 h2{
+        display: none;
+    }
+
+    #profile1 #shop-img{
+        width: 80%;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    #profile2{
+        display: block;
+        margin-right: none;
+        width: 100%;
+        margin-left: none;
+    }
+
+    #profile2 h2{
+        margin-right: 0;
+    }
+
+    #profile2 input{
+        padding: 1.2em;
+        width: 100%;
+    }
+
+    #togglePassword,#tg1,#tg2{
+        top: 2.8em;
+        left: 0;
+        margin-left: 17.9em;
+    }
+  }
+  
